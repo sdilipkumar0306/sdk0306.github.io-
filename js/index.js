@@ -4,6 +4,8 @@ $('.dark-mode').click(function () {
   // $(".dark").removeClass('');
   $(".body").toggleClass("bg-dark");  
   $(".body").toggleClass("text-white"); 
+  $(".modal-content").toggleClass("bg-dark"); 
+
 });
 
 
@@ -53,5 +55,11 @@ $(".phone").click(function(){copyToClipboard(".phonetext"); myFunction();});
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+
+function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
 
 
