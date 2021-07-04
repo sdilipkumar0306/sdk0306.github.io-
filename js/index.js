@@ -36,5 +36,22 @@ $('#projects-tab').click(function () {
   $("#resume-tab").removeClass("active-1");
   $("#projects-tab").addClass("active-1");
 });
+$(".email").click(function(){copyToClipboard(".emailtext"); myFunction();});
+$(".phone").click(function(){copyToClipboard(".phonetext"); myFunction();});
+ function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).html()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  
+  
+ };
+
+ function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 
 
