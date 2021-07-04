@@ -4,9 +4,9 @@
     border-radius: 50px;
     border: 2px solid rgb(6, 185, 185);
     /* background-color: rgb(235, 224, 79); */
-    position: absolute;
-    top: 5.5%;
-    left: 4.5%;
+    position:relative;
+   top: 5px;
+    left: 5px;
 }
 .dark-mode:hover{
     cursor: pointer;
@@ -14,8 +14,8 @@
 
 .fa-sun{
     position: relative;
-    right: -20px;
-    top: -5px;
+    right: -10px;
+    top: -6px;
     font-size: 15px;
     animation: fa-sun 0.5s 1;
     animation-direction: alternate;
@@ -24,20 +24,29 @@
     color: black;
 }
 @keyframes fa-sun {
-    0%   {right:0px ;}
-    100% {right:-20px ;}
+    0%   {right:10px ;}
+    100% {right:-10px ;}
   }
 .fa-moon{
     position: relative;
-    /* right: -1px; */
-    top: -5px;
+    right: 10px;
+    top: -6px;
     font-size: 15px;
     animation: fa-moon 0.5s 1;
     animation-direction: alternate;
     color: white;
 }
 @keyframes fa-moon {
-    0%   {right:-20px ;}
-    100% {right:0px ;}
+    0%   {right:-10px ;}
+    100% {right:10px ;}
+  }
+
+  @media screen and (max-width: 770px) {
+    .dark-mode{
+        top: 0px;
+        left: 85% !important;
+    }
+
+
   }
 
