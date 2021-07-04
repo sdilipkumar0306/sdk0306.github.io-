@@ -5,7 +5,7 @@
     border: 2px solid rgb(6, 185, 185);
     /* background-color: rgb(235, 224, 79); */
     position:relative;
-   top: 5px;
+   /* top: 5px; */
     left: 5px;
 }
 .dark-mode:hover{
@@ -15,7 +15,7 @@
 .fa-sun{
     position: relative;
     right: -10px;
-    top: -5px;
+    top: -6px;
     font-size: 15px;
     animation: fa-sun 0.5s 1;
     animation-direction: alternate;
@@ -30,7 +30,7 @@
 .fa-moon{
     position: relative;
     right: 10px;
-    top: -5px;
+    top: -6px;
     font-size: 15px;
     animation: fa-moon 0.5s 1;
     animation-direction: alternate;
