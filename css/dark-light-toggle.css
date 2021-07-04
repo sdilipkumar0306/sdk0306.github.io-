@@ -15,7 +15,7 @@
 .fa-sun{
     position: relative;
     right: -10px;
-    top: -6px;
+    top: -5px;
     font-size: 15px;
     animation: fa-sun 0.5s 1;
     animation-direction: alternate;
@@ -30,7 +30,7 @@
 .fa-moon{
     position: relative;
     right: 10px;
-    top: -6px;
+    top: -5px;
     font-size: 15px;
     animation: fa-moon 0.5s 1;
     animation-direction: alternate;
