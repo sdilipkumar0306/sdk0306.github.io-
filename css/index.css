@@ -1,2 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+.image-container img{
+    width: 80%;
+}
+.container-m{
+    display: grid;
+    grid-template-columns: 3fr 9fr !important;
+}
+.matter{
+    width: 90%;
+}
+
+.matter p {
+    border: 1px solid cyan;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Philosopher', sans-serif;
+}
+.matter p i {
+    width: 20px;
+
+    padding: auto;
+}
+
+@media screen and (max-width: 770px) {
+
+   .container-m{
+    display: grid !important;
+   grid-template-columns: none !important;
+   grid-template-rows: 3fr auto;
+} 
+.image-container img{
+    width: 50%;
+    margin: 0px auto !important;
+}
+.image-container{
+padding: 10px !important;
+}
+
+}
+@media screen and (max-width: 380px) {
+    .about{
+        position:unset !important;
+    }
+    .resume{
+        position: unset !important; 
+    }
+    .projects{
+        position: unset !important;  
+    }
+}
 
 

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@614&display=swap');
+
+
+.nav button{
+    border: none;
+    background-color: transparent;
+    text-align: end;
+}
+.nav{
+    width: auto;
+    background-color: rgb(180, 180, 180);
+    border-radius: 5px;
+
+}
+.about{
+    position: relative;
+}
+.resume{
+    position: relative; 
+}
+.projects{
+    position: relative;  
+}
+.p0{
+    left: 0px;
+}
+.p1{
+    left: calc(100% - 100px);
+}
+.p2{
+    left: calc(100% - 280px);
+}
+.p3{
+    left: calc(100% - 200px);
+}
+.p6{
+    left: calc(100% - 183px);
+}
+.p4{
+    left: -80px;
+}
+.p5{
+    left: -170px;
+}
+
+.nav li {
+    margin-bottom: 1px !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.active-1{
+    border-bottom: 2px solid black !important;
+}
+
+.about::after, 
+.resume::after, 
+.projects::after 
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.about:hover::after,
+.resume:hover::after,
+.projects:hover::after
+ {
+    width: 100%;
+/* transition: width .3s; */
+}

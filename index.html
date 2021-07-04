@@ -4,24 +4,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/mycss.css">
-    <link rel="stylesheet" href="/css/dark-light-toggle.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/socialmedia.css">
+    <link rel="stylesheet" href="css/dark-light-toggle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>SDK</title>
 </head>
 
-<body class="body" >
-    <div class="container-m d-flex my-light-shadow  my-4">
-        <div class="col-3 m-4 my-light-shadow     rounded  ">
+<body class="body">
+    <div class="dark-mode">
+        <i class="fas fa-sun dark"></i>
+    </div>
+    <div class="container-m  my-light-shadow  my-4">
+        <div class=" m-2 my-light-shadow     rounded  ">
             <div class="image-container text-center">
-                <img class="rounded-circle my-4 border border-light border-3 " src="/images/dp.jpg" width="70%" alt="">
+                <img class="rounded-circle my-4 border border-dark border-3 " src="images/dp.jpg"  alt="">
+            </div>
+            <div class="matter  m-auto">
+            <p><i class="fas fa-user-alt"></i> S Dilip Kumar</p>
+            <p><i class="fas fa-mobile-alt"></i> 9848386642</p>
+            <p><i class="fas fa-envelope"></i> sdilipkumar0306@gmail.com</p>
+            </div>
+            <div class="socialmedia">
+                <ul>
+                    <li><a href="https://www.facebook.com/dil.dilip.3950/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/dilipkumar0306"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/sdilipkumar0306"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/dilipkumar0306/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/dilip_kumar_0306/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
             </div>
         </div>
-        <div class="col m-4 my-light-shadow    border-light  rounded">cxcdc
-            <div class="dark-mode"></div>
+        <div class="  m-2 p-3 my-light-shadow rounded">
+            <ul class="nav my-light-shadow  " id="myTab" role="tablist">
+                <li class=" p-2 p0 about" role="presentation">
+                    <button class="active-1" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button"
+                        role="tab" aria-controls="home" aria-selected="true">About</button>
+                </li>   
+                <li class=" p-2 p2 resume" role="presentation">
+                    <button class="" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume" type="button"
+                        role="tab" aria-controls="profile" aria-selected="false">Resume</button>
+                </li>
+                <li class=" p-2 p2 projects" role="presentation">
+                    <button class="" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
+                        role="tab" aria-controls="contact" aria-selected="false">Projects</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab">About</div>
+                <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="profile-tab">Resume</div>
+                <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="contact-tab">Projects</div>
+            </div>
+
         </div>
     </div>
 
@@ -29,8 +67,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec6cebbabb.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
