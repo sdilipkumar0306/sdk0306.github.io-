@@ -1,0 +1,8 @@
+.my-light-shadow {
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(136, 134, 134, 0.15)!important;
+}
+
+.container-m{
+    width: 95% !important;
+    margin: auto !important;
+}
